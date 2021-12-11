@@ -14,7 +14,15 @@ node index.js
 # start react dev server
 cd front
 npm start
-
 ```
 
 After that type "help" into the Terminal and use a command.
+
+## Testing
+```
+npm install --include=dev
+or
+yarn install
+
+npm run test
+```
