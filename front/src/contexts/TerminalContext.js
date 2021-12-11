@@ -79,8 +79,6 @@ const handleKeyCommand = (state, keyEvent) => {
         return handleNewLine(state, keyEvent);
       else
         return handleEnterCommand(state, keyEvent);
-    break;
-
     default:
       return state;
   }

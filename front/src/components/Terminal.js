@@ -29,7 +29,7 @@ const Terminal = () => {
         }
       }
     } 
-  })
+  }, [terminalState])
 
   useEffect(() => {
     const keyDownHandler = (e) => {
@@ -43,7 +43,7 @@ const Terminal = () => {
     document.addEventListener("keydown", keyDownHandler);
     // cleanup listener to prevent multiple events/memory leaks
     return () => document.removeEventListener("keydown", keyDownHandler);
-  }, [handleTerminalCommand]);
+  }, [handleTerminalCommand, terminalState]);
 
   return (
     <div class="terminal-wrap">
