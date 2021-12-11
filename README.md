@@ -3,16 +3,22 @@ A simple terminal emulator that fetches photos from an API. Built with React and
 
 ## Setup
 ```
+# start server in one terminal
+cd server
+
 npm install
 # or...
 yarn
 
-# start server
-cd server
 node index.js
 
-# start react dev server
+# start react dev server in another terminal
 cd front
+
+npm install
+# or...
+yarn
+
 npm start
 ```
 
